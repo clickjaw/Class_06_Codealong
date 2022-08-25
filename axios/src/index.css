@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color: rgb(170, 216, 234);
+}
+h1.header{
+  margin-bottom: 50px;
+}
+h1{
+  font-family: 'Chakra Petch', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.searchBar{
+background-color: black;
+}
+
+.application-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 4rem 0 4rem;
+}
+
+.mapjs-container{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.cards-container{
+  font-family: "Chakra Petch";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 60px;
+  overflow: scroll;
+  height: 380px;
+  
 }
