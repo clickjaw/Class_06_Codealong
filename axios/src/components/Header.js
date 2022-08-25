@@ -10,7 +10,7 @@ export default class Header extends Component {
   render() {
     return (
       <>
-        <Nav className='justify-content-end' style={{paddingRight: '2rem', marginTop: "-50px", display: 'flex', justifyContent:'center'}}>
+        <Nav className='navMenu' style={{paddingRight: '2rem', marginTop: "-60px", display: 'flex', justifyContent:'center', fontFamily:"Carter One",}}>
             <LinkContainer to='/'>
                 <NavLink>Home</NavLink>
             </LinkContainer>
@@ -18,7 +18,7 @@ export default class Header extends Component {
                 <NavLink>About</NavLink>
             </LinkContainer>
         </Nav>
-        <h1 className = "header">Tyler Maps</h1>
+        <h1 className = "header">World Wide City Search</h1>
         {/* <h3>powered by <img style={{width: '100px'}} alt='LocationIQ Logo' src={locationIQ}/></h3> */}
         <Outlet/>
         

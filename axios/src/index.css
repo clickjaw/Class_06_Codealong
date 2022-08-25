@@ -2,16 +2,13 @@ body{
   background-color: rgb(170, 216, 234);
 }
 h1.header{
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  font-family: "Carter One"
 }
 h1{
-  font-family: 'Chakra Petch', cursive;
+  font-family: 'Carter One', cursive;
+  color:rgb(16, 101, 134);
 }
-
-.searchBar{
-background-color: black;
-}
-
 
 
 .application-container{
@@ -22,24 +19,18 @@ background-color: black;
 }
 
 .mapjs-container{
+  font-family:"Carter One";
+  letter-spacing: 1px;
+  background-color: rgb(95, 177, 210);
+  border: 15px solid rgb(95, 177, 210);
+  padding-top: 0px;
   display: flex;
   flex-direction: row;
-  
-}
-
-
-Footer{
-  /* color: rgb(202, 96, 2); */
-  color: black;
-  display: flex;
-  line-height: 180%;
-  flex-direction: column;
-  
+  border-radius: 10px;
 }
 
 .cards-container{
-  font-family: "Chakra Petch";
-  background-color: rgb(170, 216, 234);
+  font-family: "Carter One";
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -47,4 +38,31 @@ Footer{
   gap: 20px;
   overflow: scroll;
   height: 380px;
+  background-color: rgb(95, 177, 210);
+  border-radius:10px;
+}
+
+.animationMove{
+
+  position: relative;
+  animation-name: move;
+  /* animation-delay: 5s; */
+  animation-duration: 4s
+}
+@keyframes move{
+  0%   {left:235px; top:0px;}
+  25%  {left:235px; top:0px;}
+  50%  {left:235px; top:0px;}
+  75%  {left:0px; top:0px;}
+  100% { left:0px; top:0px;}
+}
+
+Footer{
+  /* color: rgb(202, 96, 2); */
+  color: black;
+  display: flex;
+  line-height: 180%;
+  flex-direction: column;
+  color: rgb(16, 101, 134)
+  
 }

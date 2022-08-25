@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Cards from './Cards'
 
 import { Modal} from 'react-bootstrap'
 
@@ -19,9 +20,10 @@ export default class Static extends Component {
     render() {
     return (
         <>
-        <Modal show={this.props.isClicked} onHide={this.handleClose}>
+        <Modal style = {{fontFamily: "Carter One"}}show={this.props.isClicked} onHide={this.handleClose}>
         <Modal.Header closeButton>
             <Modal.Title>{this.props.title}</Modal.Title>
+            
         </Modal.Header>
          <Modal.Body><img style={{width: '450px', height: '200px'}} alt='a map' src={this.props.src}/></Modal.Body>
         <Modal.Footer>

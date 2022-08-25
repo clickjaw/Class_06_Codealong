@@ -23,7 +23,7 @@ export default class Cards extends Component {
   };
 
   createMap = () => {
-    const API = `https://maps.locationiq.com/v3/staticmap?key=pk.f33dffa5bc3e6218c310d007c07dfff3&center=${this.props.lat},${this.props.lon}&zoom=5&size=400x200&format=png&maptype=dark&markers=icon:small-green-cutout|${this.props.lat},${this.props.lon}`;
+    const API = `https://maps.locationiq.com/v3/staticmap?key=pk.f33dffa5bc3e6218c310d007c07dfff3&center=${this.props.lat},${this.props.lon}&zoom=5&size=400x200&format=png&maptype=dark&markers=icon:small-yellow-cutout|${this.props.lat},${this.props.lon}`;
 
     this.setState({ src: API });
   };
@@ -35,17 +35,17 @@ export default class Cards extends Component {
   render() {
     return (
       <>
-        <Card style={{ width: "18rem" }}>
+        <Card style={{ width: "18rem", backgroundColor: "rgb(33, 129, 167)", color: 'white', border: "5px rgb(16, 101, 134) solid" }}>
           <Card.Header>
             <img style={{ width: "1rem", fontFamily: "Chakra Petch" }} />
           </Card.Header>
           <Card.Body>
             <Card.Title>{this.props.display_name}</Card.Title>
-            <Card.Text>
+            {/* <Card.Text>
               Latitude: {this.props.lat}
               <br />
               Longitude: {this.props.lon}
-            </Card.Text>
+            </Card.Text> */}
           </Card.Body>
           <Card.Footer>
             {this.state.isClicked ? (
@@ -59,7 +59,7 @@ export default class Cards extends Component {
             ) : (
               <Button
                 style={{ margin: "0 20px" }}
-                variant="primary"
+                variant="warning"
                 onClick={this.handleButton}
               >
                 View Map

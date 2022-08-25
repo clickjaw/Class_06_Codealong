@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 
 import axios from 'axios'
-import IQpic from '../pic/iqPic.png'
 import { Form, Button } from 'react-bootstrap'
 import Cards from './Cards'
+import '../index.css'
+
 
 export default class Map extends Component {
   constructor(props) {
@@ -46,15 +47,17 @@ export default class Map extends Component {
     return (
       <>
         <div className='mapjs-container'>
-            <Form validated={this.state.validated} style={{display: 'flex', flexDirection: 'column', padding: '2rem', marginLeft:'100px'}}  onSubmit={this.getLocation}>
+          <div className='animationMove'>
+            <Form validated={this.state.validated} style={{display: 'flex', flexDirection: 'column', padding: '2rem',marginLeft:'100px', marginTop:'50px', color: "white" }}  onSubmit={this.getLocation}>
             <Form.Group>
                 <Form.Label><h1  style={{fontSize: '20px'}}>Enter a city: </h1></Form.Label>
                 <Form.Control required type="text" placeholder='Memphis, TN...' style={{borderRadius: '10px'}} onChange={this.setQuery}/>
             </Form.Group><br/>
-            <Button type='submit' style={{margin: '0 100px'}} variant="primary">
+            <Button type='submit' style={{margin: '0 100px'}} variant="warning">
                 Search
             </Button>
             </Form>
+          </div>
             
             
 
