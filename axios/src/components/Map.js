@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 
 import axios from 'axios'
-
+import IQpic from '../pic/iqPic.png'
 import { Form, Button } from 'react-bootstrap'
-
 import Cards from './Cards'
 
 export default class Map extends Component {
@@ -56,6 +55,8 @@ export default class Map extends Component {
                 Search
             </Button>
             </Form>
+            
+            
 
             <div className='cards-container'>
             {this.state.location !== '' && 

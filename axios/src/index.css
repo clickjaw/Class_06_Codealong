@@ -12,6 +12,8 @@ h1{
 background-color: black;
 }
 
+
+
 .application-container{
   display: flex;
   flex-direction: column;
@@ -25,14 +27,24 @@ background-color: black;
   
 }
 
+
+Footer{
+  /* color: rgb(202, 96, 2); */
+  color: black;
+  display: flex;
+  line-height: 180%;
+  flex-direction: column;
+  
+}
+
 .cards-container{
   font-family: "Chakra Petch";
+  background-color: rgb(170, 216, 234);
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 10px 60px;
   overflow: scroll;
   height: 380px;
-  
 }
